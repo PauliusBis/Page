@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+   
+<meta charset="UTF-8">
+   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<title>1_uzduotis_3010</title>
+   
+<style>
+      
+* {
+         box-sizing: border-box;
+      
+}
+
+      
+body {
+         
+width: 1280px;
+
+      
+}
+
+      
+/*   #pixel,*/
+      
+#cirle {
+         
+width: 900px;
+         
+margin: 0 auto;
+         /*
+background-color: chartreuse;*/
+     
+ 
+}
+
+
+      
+body {
+         
+position: relative;
+         
+margin: 0;
+         
+padding: 0;
+      
+}
+
+    
+  
+#circle {
+         
+position: absolute;
+         
+width: 100%;
+         
+height: 40em;
+
+      
+
+
+.aa {
+         
+display: block;
+         
+position: absolute;
+         
+top: 50%;
+         
+left: 50%;
+         
+width: 5em;
+         
+height: 5em;
+         
+margin: 0%;
+         
+padding: 0%;
+         
+border-radius: 100%;
+      
+}
+
+ 
+     
+img {
+         
+float: left;
+         
+width: 5em;
+         
+height: 5em;
+         
+border-radius: 100%;
+         
+border: 0.1em solid rgb(184, 184, 184);
+         
+overflow: hidden;
+      
+}
+
+ 
+
+#center {
+         
+position: fixed;
+         
+width: 20em;
+         
+height: 20em;
+         
+border-radius: 100%;
+         
+border: none;
+
+      
+}
+
+      
+
+.deg0 {
+         
+transform: translate(50em);
+      
+}
+
+
+
+.deg380 {
+         /*4*/
+         
+display: inline-block;
+         
+transform: rotate(378deg) 
+translate(15em) 
+rotate(-378deg);
+      
+}
+
+ 
+ .deg56 {
+         /*5*/
+         
+display: inline-block;
+         
+transform: rotate(54deg) translate(15em) rotate(-54deg);
+      
+}
+
+ 
+.deg92 {
+         /*6*/
+         
+display: inline-block;
+         
+transform: rotate(90deg) 
+translate(15em) rotate(-90deg);
+      
+}
+
+
+.deg128 {
+         /*7*/
+         
+display: inline-block;
+         
+transform: rotate(126deg) translate(15em) rotate(-126deg);
+      
+}
+
+ 
+.deg164 {
+         /*8*/
+         
+display: inline-block;
+         
+transform: rotate(162deg) translate(15em) rotate(-162deg);
+      
+}
+
+
+.deg200 {
+         /*9*/
+         
+display: inline-block;
+         
+transform: rotate(198deg) translate(15em) rotate(-198deg);
+      
+}
+
+ 
+
+.deg236 {
+         /*10*/
+         
+display: inline-block;
+         
+transform: rotate(234deg) 
+translate(15em) rotate(-234deg);
+      
+}
+
+  
+.deg272 {
+         /*1*/
+         
+display: inline-block;
+         
+transform: rotate(270deg) translate(15em) rotate(-270deg);
+      
+}
+
+
+
+.deg308 {
+         /*2*/
+        
+display: inline-block;
+         
+transform: rotate(306deg) 
+translate(15em) rotate(-306deg);
+      
+}
+
+
+.deg344 {
+         /*3*/
+         
+display: inline-block;
+        
+ transform: rotate(342deg) 
+translate(15em) rotate(-342deg);
+      
+}
+
+
+
+#current_acounts {
+         
+position: absolute;
+         
+left: -8rem;
+         
+top: -14rem;
+         
+width: 10rem;
+      
+}
+
+
+#foreign_exchange {
+         
+position: absolute;
+         
+left: 16em;
+         
+top: -10.5em;
+         
+width: 12rem;
+     
+ }
+
+
+      
+#insurance_facilities {
+         
+position: absolute;
+         
+left: 21rem;
+         
+top: -3rem;
+         
+width: 12rem;
+      
+}
+
+ 
+
+#mortage_facilities {
+
+position: absolute;
+         
+left: 21rem;
+         
+top: 6.5rem;
+         
+width: 12rem;
+      
+}
+
+
+
+#pension_schemes {
+         
+position: absolute;
+         
+left: 15rem;
+         
+top: 14rem;
+         
+width: 12rem;
+      
+}
+
+
+#online_banking {
+         
+position: absolute;
+         
+left: 6rem;
+         
+top: 19rem;
+         
+width: 12rem;
+      
+}
+
+
+
+#investment_services {
+         
+position: absolute;
+        
+left: -19rem;
+         
+top: 14rem;
+         
+width: 12rem;
+      
+}
+
+ 
+ 
+#financial_services {
+         
+position: absolute;
+         
+left: -23rem;
+         
+top: 6.5rem;
+         
+width: 12rem;
+      
+}
+
+    
+  
+#overdraft_facilities {
+         
+position: absolute;
+         l
+eft: -24rem;
+         
+top: -3rem;
+         
+width: 12rem;
+      
+}
+
+
+      
+#saving_acounts {
+         
+position: absolute;
+         
+left: -17rem;
+         
+top: -10.5rem;
+         
+width: 12rem;
+      
+}
+
+
+      
+#center {
+         
+position: absolute;
+         
+left: -7.8rem;
+         
+top: -7.8rem;
+
+      
+}
+
+
+      
+span,
+      
+h1 {
+         
+font-weight: bold;
+      
+}
+
+
+      
+h1 {
+         
+margin-left: 15rem;
+       
+margin-bottom: 0;
+      
+}
+
+
+      
+img:hover {
+         
+transform: rotate(45deg);
+      
+}
+
+
+      
+#center:hover {
+         
+transform: none;
+      
+}
+
+
+      
+.figure {
+         
+display: inline-block;
+         /*       
+position: fixed;*/
+         
+position: relative;
+         
+top: -30px;
+         
+left: 1100px;
+         
+height: 160px;
+         
+width: 150px;
+         
+background-color: rgb(174, 174, 182);
+         
+border-bottom-left-radius: 100%20px;
+         
+border-bottom-right-radius: 100%20px;
+      
+}
+
+
+      
+p {
+         
+position: relative;
+         
+z-index: 2;
+         
+padding: 30px 9px 9px 9px;
+         
+text-align: center;
+         
+color: rgb(82, 71, 0);
+         
+font-size: 13px;
+         
+font-weight: bold;
+      
+}
+
+
+      
+.figure:after {
+         
+content: '';
+         
+position: absolute;
+         
+top: 0px;
+         
+right: 0px;
+         
+height: 157px;
+         
+width: 150px;
+         
+background-color: rgb(251, 239, 103);
+         
+border-bottom-left-radius: 100%20px;
+         
+border-bottom-right-radius: 100%90px;
+      
+}
+
+
+      
+.figure3 {
+         
+display: inline-block;
+         /*     
+position: fixed;*/
+         
+position: relative;
+         
+top: -20px;
+         
+right: -1076px;
+         
+width: 0;
+         
+height: 0;
+         
+border-style: solid;
+         
+border-width: 0 0 100px 20px;
+         
+border-color: transparent transparent rgb(174, 174, 182);
+      
+}
+
+
+      
+.figure4 {
+         
+display: inline-block;
+         
+position: absolute;
+         
+top: -30px;
+         
+right: 30px;
+         
+width: 150px;
+         
+height: 30px;
+         
+background-color: rgb(254, 242, 122);
+      
+}
+
+   
+</style>
+
+</head>
+
+
+<body>
+<div id="pixel">
+      
+	<h1>Servises Offered to Customers</h1>
+      
+		<div id="circle">
+
+         
+		<div class="aa">
+            
+		<img id="center" src="iconcenter.jpg" alt="center" />
+         
+</div>
+  
+       
+<div class="aa">
+            
+	<span id="current_acounts">Current Acounts</span>
+            
+	<a href="icon4.jpg" class="deg380"> <img src="icon4.jpg" alt="Current Acounts" /></a>
+
+         
+	</div>
+         
+<div class="aa">
+            
+	<a href="icon5.jpg" class="deg56"><img src="icon5.jpg" alt="Foreign Exchange Servces" /></a>
+            
+	<span id="foreign_exchange">Foreign Exchange Servces</span>
+         
+</div>
+         
+<div class="aa">
+            
+	<a href="icon6.jpg" class="deg92"><img src="icon6.jpg" alt="Insurance Facilities" /></a>
+            
+	<span id="insurance_facilities">Insurance Facilities</span>
+         
+</div>
+         
+<div class="aa">
+            
+	<a href="icon7.jpg" class="deg128"><img src="icon7.jpg" alt="Mortage Facilities" /></a>
+            
+	<span id="mortage_facilities">Mortage Facilities</span>
+         
+</div>
+         
+<div class="aa">
+            
+	<a href="icon8.jpg" class="deg164"><img src="icon8.jpg" alt="Pension Schemes" /></a>
+            
+<span id="pension_schemes">Pension Schemes</span>
+         </div>
+         <div class="aa">
+            
+<a href="icon9.jpg" class="deg200"><img src="icon9.jpg" alt="Online Banking Facilities" /></a>
+            
+<span id="online_banking">Online Banking Facilities</span>
+         
+</div>
+         
+<div class="aa">
+            
+<a href="icon10.jpg" class="deg236"><img src="icon10.jpg" alt="Investment Servises" /></a>
+           
+ 
+<span id="investment_services">Investment Servises</span>
+         
+</div>
+         
+<div class="aa">
+            
+<a href="icon1.jpg" class="deg272"><img src="icon1.jpg" alt="Financial Services" /></a>
+            
+<span id="financial_services">Financial Services</span>
+         
+</div>
+         
+<div class="aa">
+            
+<a href="icon2.jpg" class="deg308"><img src="icon2.jpg" alt="Overdraft Facikities" /></a>
+            
+<span id="overdraft_facilities">Overdraft Facikities</span>
+         
+</div>
+         
+<div class="aa">
+            
+<a href="icon3.jpg" class="deg344"><img src="icon3.jpg" alt="Saving Acounts" /></a>
+            
+<span id="saving_acounts">Saving Acounts</span>
+         
+</div>
+
+
+         
+<div class="figure">
+            
+<p>This si side displays various services provided by banks to i'ts customers. You can add more services in
+               this
+               side.
+            </p>
+         </div>
+         <div class="figure3"></div>
+         
+<div class="figure4"></div>
+      
+</div>
+   
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>2_uzduotis_3010</title>
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         border-top: 2px solid rgb(180, 176, 176);
+      }
+
+      main {
+         background-image: url("background222.jpg");
+         background-repeat: no-repeat;
+         width: 1148px;
+         height: 284px;
+         margin-left: 10px;
+         margin-left: 10px;
+      }
+
+      .divTable1 {
+         display: table;
+         width: 30%;
+         border-collapse: separate;
+         border-spacing: 50px;
+         margin-top: 300px;
+         float: left;
+      }
+
+      .divTable2 {
+         display: table;
+         width: 30%;
+         border-collapse: separate;
+         border-spacing: 50px;
+         margin-top: 300px;
+         float: right;
+
+      }
+
+      .divTableRow {
+         display: table-row;
+      }
+
+      .divTableHeading {
+         background-color: rgb(255, 255, 255);
+         display: table-header-group;
+      }
+
+      .divTableCell,
+      .divTableHead {
+         border: 3px solid rgb(220, 220, 220);
+         display: table-cell;
+         min-height: 100%;
+         height: 100%;
+         /*      padding: 20px 20px;*/
+         height: 65px;
+         text-align: left;
+      }
+
+      .divTableHeading {
+         background-color: rgb(255, 255, 255);
+         display: table-header-group;
+         font-weight: bold;
+      }
+
+      .divTableFoot {
+         background-color: rgb(255, 255, 255);
+         display: table-footer-group;
+         font-weight: bold;
+      }
+
+      .divTableBody {
+         display: table-row-group;
+      }
+
+      main {
+         position: relative;
+      }
+
+      .line {
+         width: 560px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 295px;
+         top: 610px;
+         z-index: -1;
+      }
+
+      .line1 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 295px;
+         top: 380px;
+         z-index: -1;
+      }
+
+      .line2 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 295px;
+         top: 500px;
+         z-index: -1;
+      }
+
+      .line3 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 295px;
+         top: 720px;
+         z-index: -1;
+      }
+
+      .line4 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 295px;
+         top: 840px;
+      }
+
+      .line6 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 775px;
+         top: 380px;
+      }
+
+      .line7 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 775px;
+         top: 500px;
+      }
+
+      .line8 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 775px;
+         top: 720px;
+      }
+
+      .line9 {
+         width: 80px;
+         border-bottom: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 775px;
+         top: 840px;
+      }
+
+      .line10 {
+         height: 462px;
+         border-right: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 375px;
+         top: 380px;
+
+      }
+
+      .line11 {
+         height: 462px;
+         border-right: 2px solid rgb(180, 176, 176);
+         position: absolute;
+         align-content: center;
+         left: 775px;
+         top: 380px;
+         z-index: -1;
+      }
+
+
+      i {
+         display: inline-block;
+         position: absolute;
+         font-size: 40px;
+         width: 74px;
+         height: 74px;
+         background: rgb(252, 251, 250);
+         color: rgb(101, 157, 157);
+         border-radius: 50%;
+         border: 2px solid rgb(101, 157, 157);
+         padding: 10px;
+         text-align: center;
+         vertical-align: middle;
+
+      }
+
+      a:nth-of-type(1) i,
+      a:nth-of-type(2) i,
+      a:nth-of-type(7) i,
+      a:nth-of-type(9) i {
+         color: rgb(29, 46, 53);
+         border: 2px solid rgb(29, 46, 53);
+      }
+
+      i::before {
+         text-align: center;
+         vertical-align: middle;
+      }
+
+
+
+
+      .fa-users {
+         position: absolute;
+         left: 495px;
+         top: 530px;
+         font-size: 80px;
+         padding: 30px;
+         width: 164px;
+         height: 164px;
+         border-radius: 50%;
+         border: 2px solid rgb(180, 176, 176);
+         color: black;
+      }
+
+      .fa-bitcoin {
+         position: absolute;
+         left: 255px;
+         top: 460px;
+      }
+
+      .fa-money-check {
+         position: absolute;
+         left: 255px;
+         top: 574px;
+      }
+
+      .fa-hand-holding-usd {
+         position: absolute;
+         left: 255px;
+         top: 688px;
+      }
+
+      .fa-landmark {
+         position: absolute;
+         left: 255px;
+         top: 800px;
+      }
+
+      .fa-piggy-bank {
+         position: absolute;
+         left: 255px;
+         top: 348px;
+      }
+
+      .fa-clinic-medical {
+         position: absolute;
+         left: 830px;
+         top: 345px;
+      }
+
+      .fa-file-invoice {
+         position: absolute;
+         left: 830px;
+         top: 460px;
+      }
+
+      .fa-globe {
+         position: absolute;
+         left: 830px;
+         top: 574px;
+      }
+
+      .fa-money-check-alt {
+         position: absolute;
+         left: 830px;
+         top: 686px;
+      }
+
+      .fa-paste {
+         position: absolute;
+         left: 830px;
+         top: 800px;
+      }
+
+      p {
+         font-size: 20px;
+         margin: 0;
+      }
+
+
+      .right {
+         padding-left: 55px;
+         padding-top: 0;
+         padding-bottom: 0;
+         padding-right: 10px;
+         text-align: left;
+         vertical-align: middle;
+      }
+
+      .right span {
+         display: block;
+         padding-left: 55px;
+         padding: 10px;
+         font-weight: bold;
+      }
+
+      .left {
+         padding-right: 55px;
+         padding-top: 0;
+         padding-bottom: 0;
+         padding-left: 10px;
+         text-align: right;
+         vertical-align: middle;
+
+      }
+
+      .left span {
+         display: block;
+         padding-right: 55px;
+         padding: 10px;
+         font-weight: bold;
+      }
+
+      .description {
+         display: block;
+         position: absolute;
+         width: 300px;
+         height: 300px;
+         background: rgba(234, 234, 234, 0.425);
+         color: black;
+         text-align: center;
+         padding-top: 72.6px;
+         left: 50px;
+      }
+
+      .description p {
+         font-size: 44px;
+         color: rgb(0, 0, 0);
+         margin: 0;
+         padding: 0;
+         opacity: 1;
+      }
+
+      a:hover i {
+         color: blue;
+         border: 2px solid blue;
+      }
+
+      .stiker {
+         display: block;
+         position: absolute;
+         width: 150px;
+         height: 150px;
+         background: rgb(255, 238, 175);
+         color: black;
+         text-align: center;
+         padding-top: 40px;
+         padding-right: 10px;
+         padding-left: 10px;
+         left: 950px;
+         top: 30px;
+
+      }
+
+      .stiker p {
+         font-size: 14px;
+      }
+
+      .stikertop {
+         position: absolute;
+         width: 50px;
+         height: 30px;
+         transform: skewY(10deg);
+         background: rgba(161, 161, 161, 0.63);
+         left: 990px;
+         top: 20px;
+      }
+   </style>
+
+
+   <script src="https://kit.fontawesome.com/60fe9fb008.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+   <main>
+
+      <div class="divTable1">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCell left"><span>Current Acounts</span></div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCell left"><span>Saving Acounts</span></div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCell left"><span>Overdraft Facilities</span></div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCell left"><span>Financial Services</span></div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCell left"><span>Investman Services</div>
+            </div>
+         </div>
+      </div>
+      <div class="divTable2">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCell right" class="right"><span>Foreign Exchange Services</span></div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCell right"><span>Insurance Facilities</span></div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCell right"><span>Mortage Facilities</span></div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCell right"><span>Pension Schemes</span></div>
+            </div>
+            <div class="divTableRow">
+               <Facilities class="divTableCell right" class="right"><span>Online Banking Facilities</span>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="line"></div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+      <div class="line4"></div>
+      <div class="line5"></div>
+
+      <div class="line6"></div>
+      <div class="line7"></div>
+      <div class="line8"></div>
+      <div class="line9"></div>
+      <div class="line10"></div>
+      <div class="line11"></div>
+      <div class="line12"></div>
+
+      <i class="fas fa-users">
+         <p>Customers</p>
+      </i>
+
+      <div class="icons">
+         <a href="#"><i class="fab fa-bitcoin"></i></a>
+         <a href="#"><i class="fas fa-hand-holding-usd"></i></a>
+         <a href="#"><i class="fas fa-money-check"></i></a>
+         <a href="#"><i class="fas fa-landmark"></i></a>
+         <a href="#"><i class="fas fa-piggy-bank"></i></a>
+         <a href="#"><i class="fas fa-clinic-medical"></i></a>
+         <a href="#"><i class="fas fa-file-invoice"></i></a>
+         <a href="#"><i class="fas fa-globe"></i></a>
+         <a href="#"><i class="fas fa-money-check-alt"></i></a>
+         <a href="#"><i class="fas fa-paste"></i></a>
+      </div>
+      <div class="description">
+         <p>Servises</p>
+         <p> Offered to</p>
+         <p> Customers</p>
+      </div>
+      <div class="stiker">
+         <p>This si side displays various services provided by banks to i'ts customers. You can add more services in
+            this
+            side.
+      </div>
+      <div class="stikertop"></div>
+   </main>
+</body>
+
+
+
+</html>

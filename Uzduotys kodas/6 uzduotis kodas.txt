@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta name="viewport" content="width=device-widh,initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+    body {
+        margin-right: 1rem;
+    }
+   .container1 {
+        display: grid;
+        grid-template-columns: 75% 25%;
+   }
+   .container2 {
+        display:grid;
+        grid-template-columns: 30% 70%;
+   }
+    .eilute1 {
+        display: grid;
+        margin-right: 2rem;
+    }
+    .antraste {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        color: rgb(5, 40, 80);
+        margin-left: 1rem;
+    }
+    .antraste2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        color:white;
+        background-color: rgb(8, 60, 124);
+        margin-top: 1rem;
+    }
+    .paragrafas {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .stulpeliai {
+        display: grid;
+    }
+    .clear::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    .img {
+        width: 10rem;
+        height: 10rem;
+        border: 0.2rem solid lightgray;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    a {
+        text-decoration: none;
+        color:ligt rgb(75, 96, 139);
+    }
+        /* unvisited link */
+    a:link {
+        color: rgb(77, 149, 231);
+    }
+        /* visited link */
+    a:visited {
+        color: blue;
+        text-decoration:;
+    }
+        /* mouse over link */
+    a:hover {
+        color: hotpink;
+    }
+         /* selected link */
+    a:active {
+        color: rgb(52, 231, 111);
+    }
+    .button {
+        background-color:lightgray;
+        border:solid gray;
+        padding: 0.2rem ;
+        text-decoration: underline;
+        color:rgb(17, 85, 163);
+    }  
+    .button:hover {
+        background-color: white;
+        color:rgb(17, 85, 163);
+        text-decoration: none;
+    } 
+    .bulb {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-image: url("plus.png");
+        background-position: center;
+        background-size: contain;
+    }
+    .bulb:hover {
+        background-image: url("minus.png");
+    }
+    .chat {
+        display: inline-block;
+        background-image: url("mesages.png");
+        background-position: left;
+        background-size: contain;
+        width: 13.5rem;
+        height: 13.5rem;
+        padding:3rem;
+        margin-top: 1rem;
+        color: gray;
+        text-align: justify;
+    }
+</style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="eilute1">
+                <div class="antraste">Meet the HBCWeb Team</div>
+                <div class="paragrafas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat totam facere laudantium necessitatibus corporis, non, temporibus magnam quam beatae quia praesentium ipsam ut! Sunt, a ad? Accusamus, suscipit! Natus?</div>
+                <div class="container2">
+
+                    <div class="img"><img src="1.png" alt="Trulli" width="160rem" height="160rem"></div>
+                        <div>
+                            <div class="antraste2">BOB CARLING- <a target="_blank" href="tryit.asp?filename=trycss_text">DEVELOMENT MANAGER</a></p></div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis mollitia, facere fugiat recusandae id earum ab delectus quibusdam, tempore distinctio impedit corporis voluptates harum eligendi <a href="http://www.day.lt">asperiores</a>exercitationem ad debitis.</p>
+                        </div>
+    
+                        <div class="img"><img src="2.png" alt="Trulli" width="160" height="160"></div>
+                        <div>
+                            <div class="antraste2">DUSTIN GREEN- <a target="_blank" href="tryit.asp?filename=trycss_text">LEAD DEVELOPER</a></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum doloribus reiciendis libero consectetur non. Sunt vitae quia at deleniti placeat iste ducimus! Inventore distinctio ad porro magni, veniam impedit odit.</p>
+                        </div>
+    
+                        <div class="img"><img src="3.png" alt="Trulli" width="160" height="160"></div>
+                        <div>
+                            <div class="antraste2">GLENN GENERAO-<a target="_blank" href="tryit.asp?filename=trycss_text">GHRAPHIC DESIGNER</a></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit nihil ducimus, consectetur dolor repellat, quibusdam adipisci a quidem debitis autem vero praesentium nostrum reprehenderit quo eveniet possimus perspiciatis minus?</p>
+                        </div>
+    
+                        <div class="img"><img src="4.png" alt="Trulli" width="160" height="160"></div>
+                        <div>
+                            <div class="antraste2">WES SAYAS-<a target="_blank" href="tryit.asp?filename=trycss_text">LEAD PROGRAMMER</a></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit repellendus iure tempora temporibus animi, corporis natus obcaecati deserunt ex vero. Natus rerum distinctio quos. Provident, harum. Placeat, perferendis quidem!</p>
+                        </div>
+                </div>
+                </div>
+                    <div class="stulpelisdesineje">
+                        <div class="antraste2">&#x1F50DMore About HBVWeb</div>
+                        <div class="button"><div class="bulb"></div>Company Overview</div>
+                        <div class="button"><div class="bulb"></div>Meet the Team</div>
+                        <div class="button"><div class="bulb"></div>The Digs</div>
+                        <div class="button"><div class="bulb"></div>The Priceline PM</div>
+                        <div class="button"><div class="bulb"></div>Clien Test</div>
+                        <div class="antraste2">&#xf075DWhat your client are saying...</div>
+                        <div class="chat">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, perspiciatis! Blanditiis unde ipsam alias sit provident soluta in eligendi quam!"</div>
+                        <div><a href="http://www.day.lt">View All Client Testamential</a></div>
+                    </div>
+        </div>
+    </body>
+</html>

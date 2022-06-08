@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Tables</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+              width: 590px;
+              height: 520px;
+              border: 2px solid lightgrey;
+            }
+            .meniu {
+              background-color: lightgrey;
+              align:;
+              padding-top: 8px;
+              padding-bottom: 7px;
+              border-bottom: solid rgb(184, 199, 194);
+              display: flex;
+              align-items: center;
+            }
+            .meniutext2 {
+              text-align:left;
+              font-style: inherit;
+              color: blue;
+              font-size: 10px;
+              font-weight: bold;
+            }
+            .meniutext3 {
+              text-align:;
+              font-style: inherit;
+              color: blue;
+              font-size: 10px;
+              font-weight: bold;
+              display: inline;
+              background-color: #f44336;
+              color: white;
+              padding: 14px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              width: 30px;
+              height: 10px;
+              border-radius: 5px;
+              display:inline-block;
+            }
+            .meniu2 {
+              display: flex;
+              align-items: center;
+            }
+            .meniu2text {
+              text-align:left;
+              font-style: inherit;
+              color: blue;
+              font-size: 12px;
+              font-weight: bold;
+            }
+            .meniutext {
+              color:red;
+              font-weight: bold;
+              font-size: 20px;
+              display: inline-block;
+              flex: 1;
+            }
+            .header2{
+              padding-top: 10px;
+              text-align: center;
+              color: grey;
+              font-size: 50px;
+              font-weight: bold;
+            }
+            .stulpelis1 {
+              position: relative;
+              top: 10px;
+              left: 10px;
+              height: 80px;
+              width: 60px;
+              border: 2px solid lightgrey ;
+              padding: px;
+              border-radius: 5px;
+              display:inline-block;
+              float: left;
+            }
+            .stulpelis2 {
+              position: relative;
+              left: 20px;
+              flex: 1;
+              border-bottom: 2px solid lightgray;
+              border-left: 2px solid lightgrey;
+              display: inline-block;
+              float: left;
+              width: 82.00%;
+              height: 107.5px;
+              padding-left:10px;
+              padding-right: 10px;
+              margin-top:7px;
+              margin-bottom:0px;
+              border-top:0px ;
+            }
+            .stulpelis3 {
+              flex: 1;
+              display: inline-block;
+              float: left;
+              width: 30.00%;
+              padding-left:20px;
+            }
+            .picture{
+              width: 20px;
+              height: 20px;
+            }
+            h1 {
+              color: black;
+              font-size: 17px;
+              margin:2px;
+              content: ' \00BB';
+            }
+            h1:after {
+              content: ' \00BB';
+            }
+            p {
+              color: black;
+              font-size: 12px;
+              margin:0px;
+              font-weight: bold;
+            }
+            p1 {
+              color: black;
+              font-size: 14px;
+              font-weight: bold;
+            }
+            .metai {
+              font-size: 15px;
+              color:lightgray;
+              text-align: center;
+              border-bottom: solid red;
+              background: red;
+            }
+            .diena {
+              font-size: 25px;
+              color: red;
+              text-align: center;
+              border-bottom: solid red;
+            }
+            .menuo {
+              font-size: 15px;
+              color:lightgray;
+              text-align: center;
+              background: rgb(184, 199, 194);
+            }
+            /* unvisited link */
+            a:link {
+              color: red;
+            }
+            /* visited link */
+            a:visited {
+              color: green;
+            }
+            /* mouse over link */
+            a:hover {
+              color: hotpink;
+            }
+            /* selected link */
+            a:active {
+              color: blue;
+            }
+       </style>
+    </head>
+  <body>
+  <div>
+    <div class="meniu ">
+        <div class="picture"> <img src="data:image/png;base64,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" alt="men silhoutte" width="20" height="20"></div>
+        <div class="meniutext">Most Popular Stories</div>
+        <div class="meniutext2 alignleft"><a href="http://www.day.lt">What's this?</div>
+        <div class="meniutext3"><a href="http://www.day.lt">NOW</div>
+        <div class="meniutext3"><a href="http://www.day.lt">TODAY</div>
+        <div class="meniutext3"><a href="http://www.day.lt">THISWEEK</div>
+    </div>
+    <div class="stulpelis1">
+      <div class="metai">2022</div>
+      <div class="diena">19</div>
+      <div class="menuo">Sausis</div>
+    </div>
+    <div class="stulpelis2">
+        <h1>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom </h1>
+        <p>Posted by: nuoroda  6 hours,32 mitutes ago in Vilnius</p>
+        <p1>Today is President Day, that sacred holiday on the United States calendar devoted to honoring the births ot the two most important president in...</p1>
+        <div class="meniu2">
+            <div class="meniu2text">More &#124</label></div>
+            <div class="meniu2text">Discuss(0)&#124</div>
+            <div class="meniu2text">Read Full Story at latimesblogs.latimes.com </div>
+        </div>
+      </div>
+      <div class="stulpelis1">
+        <div class="metai">2022</div>
+        <div class="diena">19</div>
+        <div class="menuo">Sausis</div>
+      </div>
+      <div class="stulpelis2">
+        <h1>C-SPAN ranks presidents: Abe still on top, new shocker </h1>
+        <p>Posted by: nuoroda  6 hours,32 mitutes ago in Vilnius</p>
+        <p1>Today is President Day, that sacred holiday on the United States calendar devoted to honoring the births ot the two most important president in...</p1>
+        <div class="meniu2">
+          <div class="meniu2text">More &#124</div>
+          <div class="meniu2text">Discuss(0) &#124</div>
+          <div class="meniu2text">Read Full Story at latimesblogs.latimes.com </div>
+        </div>
+      </div>
+      <div class="stulpelis1">
+        <div class="metai">2022</div>
+        <div class="diena">19</div>
+        <div class="menuo">Sausis</div>
+      </div>
+      <div class="stulpelis2">
+        <h1>C-SPAN ranks presidents: Abe still on top, new shocker </h1>
+        <p>Posted by: nuoroda  6 hours,32 mitutes ago in Vilnius</p>
+        <p1>Today is President Day, that sacred holiday on the United States calendar devoted to honoring the births ot the two most important president in...</p1>
+        <div class="meniu2">
+          <div class="meniu2text">More &#124</div>
+          <div class="meniu2text">Discuss(0) &#124</div>
+          <div class="meniu2text">Read Full Story at latimesblogs.latimes.com </div>
+        </div>
+      </div>
+        <div class="stulpelis1">
+          <div class="metai">2022</div>
+          <div class="diena">19</div>
+          <div class="menuo">Sausis</div>
+        </div>
+        <div class="stulpelis2">
+          <h1>C-SPAN ranks presidents: Abe still on top, new shocker</h1>
+          <p>Posted by: nuoroda  6 hours,32 mitutes ago in Vilnius</p>
+          <p1>Today is President Day, that sacred holiday on the United States calendar devoted to honoring the births ot the two most important president in...</p1>
+          <div class="meniu2">
+            <div class="meniu2text">More &#124</div>
+            <div class="meniu2text">Discuss(0) &#124</div>
+            <div class="meniu2text">Read Full Story at latimesblogs.latimes.com </div>
+          </div>
+        </div>
+   </div>
+
+         
+        
+
+
+  </div>
+  </body>
+</html>
+ 
